@@ -15,7 +15,6 @@ def predict_result(area, bedrooms, floors):
     })
 
     prediction = model.predict(input_data)[0]
-    probability = model.predict_proba(input_data)[0]
 
 demo = gr.Interface(
     fn=predict_result,
