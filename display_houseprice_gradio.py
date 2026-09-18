@@ -15,6 +15,7 @@ def predict_result(area, bedrooms, floors):
     })
 
     prediction = model.predict(input_data)[0]
+    return f"Predicted price: {prediction}"
 
 demo = gr.Interface(
     fn=predict_result,
